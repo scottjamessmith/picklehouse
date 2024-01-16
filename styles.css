@@ -1,0 +1,171 @@
+@import url("fonts/fonts.css");
+
+@font-face 
+{
+    font-family: Katibeh;
+    src: url(sKatibeh-Regular.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 10px;
+}
+
+body
+{
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.8rem;
+    line-height: 1.25em;
+    background: #fff;
+    color: #000;
+    display: grid;
+    min-height: 90vh;
+    padding: 1vmax;
+    margin: 0;
+}
+
+main
+{
+    border: .25rem solid #45aa5b;
+    border-radius: 1rem;
+    border-style: dashed;
+    padding: 2em;
+    margin: auto;
+    max-width: 45rem;
+}
+
+a
+{
+    font-family: "Katibeh", serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+header
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    place-items: center center;
+}
+
+header:before
+{
+    content: "";
+    display: block;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 14rem;
+    width: 14rem;
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+
+h1
+{
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.35em;
+    font-weight: 400;
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    margin-left: 2rem;
+    align-self: center;
+}
+
+h1 a
+{
+    text-align: right;
+    font-size: 5rem;
+    line-height: .85em;
+    display: block;
+    font-weight: 800;
+}
+
+hr
+{
+    border: 0;
+    border-bottom: 0.1rem solid #45aa5b;
+    margin: 1em 0;
+}
+
+a
+{
+    color: #45aa5b;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition-duration: 250ms;
+    transition-timing-fuction: linear;
+    transition-property: border;
+    border: 0.15rem solid transparent;
+}
+
+a:hover
+{
+    border-bottom: 0.15rem solid #45aa5b;
+}
+
+h1 a:hover
+{
+    border: 0.15rem solid transparent;
+}
+
+p, ul
+{
+    margin: 0.5em auto;
+}
+
+section
+{
+    margin: 0;
+}
+
+#personnel p
+{
+    margin-bottom: 0;
+}
+
+ul#namebox
+{
+    margin-top: 0.5em;
+    padding-left: 2em;
+}
+
+dl
+{
+    display: grid;
+    grid: auto-flow / 1fr 2fr 2fr 1fr;
+    margin: 0 auto;
+    padding: 0;
+}
+
+dt
+{
+    text-transform: lowercase;
+    grid-column: 2 / span 1;
+}
+
+dd
+{
+    text-align: right;
+    grid-column: 3 / span 1;
+}
+
+@media (max-width: 450px)
+{
+    html { font-size: 2vw; }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
+    body, h1 { font-weight: 200; }
+}
