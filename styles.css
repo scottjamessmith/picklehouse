@@ -22,11 +22,10 @@ body
 {
     font-family: "Katibeh", serif;
     font-weight: 400;
-    font-style: italic;
-    font-size: 1.8rem;
-    line-height: 1.25em;
+    font-size: 2rem;
+    line-height: 1em;
     background: #fff;
-    color: #000;
+    color: #313131;
     display: grid;
     min-height: 90vh;
     padding: 1vmax;
@@ -105,7 +104,7 @@ a
 {
     color: #45aa5b;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1.06em;
     transition-duration: 250ms;
     transition-timing-fuction: linear;
     transition-property: border;
@@ -163,6 +162,11 @@ dd
     grid-column: 3 / span 1;
 }
 
+.crazyfont
+{
+    animation: color-change 0.5s infinite;
+}
+
 @media (max-width: 450px)
 {
     html { font-size: 2vw; }
@@ -170,4 +174,12 @@ dd
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
     body, h1 { font-weight: 200; }
+}
+  
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: rgb(212, 255, 0); }
+    50% { color: rgb(0, 255, 81); }
+    75% { color: blue; }
+    100% { color: rgb(255, 0, 234); }
 }
