@@ -34,9 +34,8 @@ body
 
 main
 {
-    border: .25rem solid #45aa5b;
-    border-radius: 1rem;
-    border-style: dashed;
+    border: 1rem solid #858585;
+    border-style: groove;
     padding: 2em;
     margin: auto;
     max-width: 45rem;
@@ -44,7 +43,7 @@ main
 
 a
 {
-    font-family: "Katibeh", serif;
+    font-family: Times;
     font-style: normal;
     font-weight: 600;
 }
@@ -102,7 +101,7 @@ hr
 
 a
 {
-    color: #45aa5b;
+    color: black;
     text-decoration: none;
     font-size: 1.06em;
     transition-duration: 250ms;
