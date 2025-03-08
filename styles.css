@@ -20,9 +20,9 @@ html
 
 body
 {
-    font-family: "Katibeh", serif;
+    font-family: "Times", serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1em;
     background: #fff;
     color: #313131;
@@ -94,7 +94,7 @@ h1 a
 hr
 {
     border: 0;
-    border-bottom: 0.1rem solid #45aa5b;
+    border-bottom: 0.1rem solid black;
     margin: 1em 0;
 }
 
